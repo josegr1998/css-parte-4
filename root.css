@@ -1,0 +1,25 @@
+/*:root root element of the document
+html element
+general styles
+css variables*/
+
+:root {
+  /*background-color: red;*/
+  /*font-size: 25px;*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.absolute {
+  font-size: 24px;
+}
+
+.responsive {
+  font-size: 1.5rem;
+}
+/*1 rem === 16 px*. Por lo tanto en un momento inicial, el parrafo .absolute y el .responisve tendrian el mismo tama;o de fuente. Ahora bien,
+1 rem depende de el tama;o de fuente elegido por el usuario, por lo tanto si el usuario cambia el tama;o de fuente desde el navegador, el 
+parrafo .responisve cambiara tambien, pero el .absolute no. Tambien podemos lograr un cambio en el valor de 1 rem, afectando el font-size 
+de :root. Ya que POR DEFECTO, los navegares tienen ese valor en 16 px para 1 rem, pero desde css podemos cambiarlo/

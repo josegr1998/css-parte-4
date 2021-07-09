@@ -1,0 +1,42 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 10px;
+  transition: all 1s;
+}
+
+div:hover {
+  transform: translateX(100px);
+}
+
+/*Se pueden combinar las proppiedades de transform con las transiciones y con el hover :D*/
+/*transition-timing-funtion:
+el valor ease, es el valor por defecto
+el valor linear, hace que la transicion ocupe el mismo tiempo de inicio y de final
+*/
+
+.default {
+  transition-timing-function: ease; /*default*/
+}
+
+.ease {
+  transition-timing-function: ease; /*slow start,fast,slow end*/
+}
+
+.linear {
+  transition-timing-function: linear; /*same speed start to end*/
+}
+.ease-in {
+  transition-timing-function: ease-in; /*slow start*/
+}
+
+.ease-out {
+  transition-timing-function: ease-out; /*slow end*/
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out; /*slow start,fast,slow end*/
+}
+
+/*transition 0 = 100%
+AMIMATION 0 1% 2%......100%*/

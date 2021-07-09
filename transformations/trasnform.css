@@ -1,0 +1,38 @@
+/*transform(), translate(),scale(),rotate,skew()*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+  transform: translateX(600px) rotateZ(45deg);
+}
+
+.three {
+  background: blue;
+  transform: translate(200px, 300px) rotateZ(20deg) scaleX(2);
+}
+
+/*La funcion translate mueve el bloque o elemento seleccionado en el eje x e y. Si elejimos un porcenetaje, ese porcentaje estara en relacion
+al ANCHO del elemento en el eje x y al ALTO en el eje y. Puedo poner tanto valores positivos como negativos. Si uso solo la funcion translate(),
+el primer valor va a ser del eje X y el segundo valor del eje Y. Los valores van separados por una coma*/
+
+/*La propiedad scale sirve para hacer el elemento mas grande o mas peque;o en ambas direcciones. Si elejimos por ej transform:scaleX(2); el 
+elemento se hara dos veces mas grande en el eje x*. El crecimiento o la disminucion sucede de ambos lados del eje x/
+
+/*RotateZ() Sirve para rotar el elemento uan determinada cantidad de grados. EL valor que lleva es deg*/
+/*Si quiero poner dos funciones a la vez, debo separarlas por un espacio*/
+/*TENER EN CUENTA QUE EL TRANSLATE TIENE QUE IR PRIMERO*?*/
+
+.four {
+  background: yellow;
+  transform: skewX(20deg);
+}
+/*La propiedad skew sirve como para torcer el elemento en ambos ejes*/ /*mirar algun videito extra de skew ;)*/

@@ -1,0 +1,80 @@
+/*transitions: change over time
+transition-property:
+transition-duration
+transition-dalay*/
+
+. {
+  box-sizing: border-box;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.one {
+  background: blue;
+  transition: background, width, height, border-radius;
+  transition-duration: 1.2s, 1.2s, 1.2s, 2s;
+}
+
+.two {
+  background: green;
+  transition: background, width, height, border, border-radius;
+  transition-duration: 1.2s, 1.2s, 1.2s, 2s, 2s;
+}
+.three {
+  background: yellow;
+}
+
+.one:hover {
+  background: purple;
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+}
+
+.two:hover {
+  background: coral;
+  width: 160px;
+  height: 160px;
+  border: cyan;
+  border-radius: 60px;
+}
+/*la propiedad hoover y transition van de la mano*/
+/*La propiedad transition delay establece cuanto se espera para que comience la transicion*/
+
+.four {
+  background: darkcyan;
+  transition: background, border-radius;
+  transition-duration: 3s, 2s;
+  transition-delay: 2s;
+}
+
+.four:hover {
+  background: darkmagenta;
+  border-radius: 30px;
+}
+/*Un atajo para escribir las propiedades seria:
+transition: nombre de la transicion duracion delay, nombre de la transicion duracion delay;
+ej:
+.three{
+  background:blue;
+  transition: background 3s 2s, border-radius 5s 1s;
+}*/
+/*Para hacer exactamente lo mismo con todo se puede seleccionar "all" ej:*/
+
+.five {
+  background: firebrick;
+  transition: all 2s 0.5s;
+}
+
+.five:hover {
+  background: gold;
+  border-radius: 20px;
+  border: hotpink 4px solid;
+  width: 160px;
+  height: 160px;
+}

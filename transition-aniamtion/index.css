@@ -1,0 +1,42 @@
+/*transition 0 = 100%
+AMIMATION 0 1% 2%......100%*/
+div {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  color: white;
+}
+
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background: yellow;
+  transform: translateX(100px);
+}
+
+.animation {
+  background: blue;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100px);
+    background: red;
+    color: blue;
+  }
+  50% {
+    background: yellow;
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+}
+
+/*animation-fill-mode:foward: HAce que cuando la aniamcion termine, el div sobre el cual aplicamos la animacion se quede con las
+caracteristicas que le dimos en el valor 100% del keyframes*/
